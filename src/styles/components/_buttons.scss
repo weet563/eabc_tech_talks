@@ -1,3 +1,5 @@
+@use '../variables' as *;
+
 .button {
     padding: 12px;
     font-size: 18px;
@@ -7,18 +9,19 @@
     white-space: nowrap;
 
     &--primary {
-        color: #fff;
-        background-color: #4f2ac3;
-    }
-
-    @media (max-width: 640px) {
-        display: block;
-        width: 100%;
+        color: $textColor;
+        background-color: $bgColorButton;
     }
 
     @media (max-width: 1024px) {
         display: flex;
         align-items: center;
     }
+    
+    @media (max-width: 640px) {
+        display: block;
+        width: 100%;
+    }
 }
+
 
